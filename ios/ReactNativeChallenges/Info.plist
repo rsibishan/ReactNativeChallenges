@@ -38,6 +38,11 @@
 		<string>RobotoCondensed-Light.ttf</string>
 		<string>RobotoCondensed-LightItalic.ttf</string>
 		<string>RobotoCondensed-Regular.ttf</string>
+		<string>CarmenSans-SemiBold.otf</string>
+		<string>CarmenSans-Thin.otf</string>
+		<string>CarmenSans-Regular.otf</string>
+		<string>CocoGothic-Bold.ttf</string>
+		<string>CocoGothic.ttf</string>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>

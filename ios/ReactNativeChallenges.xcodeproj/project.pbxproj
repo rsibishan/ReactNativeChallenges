@@ -34,6 +34,11 @@
 		9B6D51DB2600EFF800CED199 /* RobotoCondensed-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B6D51C92600EFF800CED199 /* RobotoCondensed-BoldItalic.ttf */; };
 		9B6D51DC2600EFF800CED199 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B6D51CA2600EFF800CED199 /* Roboto-ThinItalic.ttf */; };
 		9B6D51DD2600EFF800CED199 /* RobotoCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B6D51CB2600EFF800CED199 /* RobotoCondensed-Regular.ttf */; };
+		9BA75FA3260204A30013B48E /* CarmenSans-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9BA75F9E260204A30013B48E /* CarmenSans-SemiBold.otf */; };
+		9BA75FA4260204A30013B48E /* CarmenSans-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9BA75F9F260204A30013B48E /* CarmenSans-Thin.otf */; };
+		9BA75FA5260204A30013B48E /* CocoGothic-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9BA75FA0260204A30013B48E /* CocoGothic-Bold.ttf */; };
+		9BA75FA6260204A30013B48E /* CocoGothic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9BA75FA1260204A30013B48E /* CocoGothic.ttf */; };
+		9BA75FA7260204A30013B48E /* CarmenSans-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9BA75FA2260204A30013B48E /* CarmenSans-Regular.otf */; };
 		9F4627D621F77A1E2771B0A0 /* libPods-ReactNativeChallenges-ReactNativeChallengesTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB75FFBA9E10CB93A24E9924 /* libPods-ReactNativeChallenges-ReactNativeChallengesTests.a */; };
 		B63A6942C99BD963C8E7EEA8 /* libPods-ReactNativeChallenges-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 276B5584E93FF6250C58AB00 /* libPods-ReactNativeChallenges-tvOSTests.a */; };
 		BBD89919A4C6E849CA226583 /* libPods-ReactNativeChallenges.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 559B9441EE0FDE408C0E3953 /* libPods-ReactNativeChallenges.a */; };
@@ -97,6 +102,11 @@
 		9B6D51C92600EFF800CED199 /* RobotoCondensed-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "RobotoCondensed-BoldItalic.ttf"; path = "../OnBoarding/src/fonts/RobotoCondensed-BoldItalic.ttf"; sourceTree = "<group>"; };
 		9B6D51CA2600EFF800CED199 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-ThinItalic.ttf"; path = "../OnBoarding/src/fonts/Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
 		9B6D51CB2600EFF800CED199 /* RobotoCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "RobotoCondensed-Regular.ttf"; path = "../OnBoarding/src/fonts/RobotoCondensed-Regular.ttf"; sourceTree = "<group>"; };
+		9BA75F9E260204A30013B48E /* CarmenSans-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CarmenSans-SemiBold.otf"; path = "../Nike/src/fonts/CarmenSans-SemiBold.otf"; sourceTree = "<group>"; };
+		9BA75F9F260204A30013B48E /* CarmenSans-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CarmenSans-Thin.otf"; path = "../Nike/src/fonts/CarmenSans-Thin.otf"; sourceTree = "<group>"; };
+		9BA75FA0260204A30013B48E /* CocoGothic-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CocoGothic-Bold.ttf"; path = "../Nike/src/fonts/CocoGothic-Bold.ttf"; sourceTree = "<group>"; };
+		9BA75FA1260204A30013B48E /* CocoGothic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = CocoGothic.ttf; path = ../Nike/src/fonts/CocoGothic.ttf; sourceTree = "<group>"; };
+		9BA75FA2260204A30013B48E /* CarmenSans-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CarmenSans-Regular.otf"; path = "../Nike/src/fonts/CarmenSans-Regular.otf"; sourceTree = "<group>"; };
 		9BDEDFE425FCFC81002C0FBC /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
 		9BDEDFE525FCFC81002C0FBC /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
 		9BDEDFE625FCFC81002C0FBC /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
@@ -246,6 +256,11 @@
 				9B6D51BB2600EFF700CED199 /* Roboto-Light.ttf */,
 				9B6D51C12600EFF800CED199 /* Roboto-LightItalic.ttf */,
 				9B6D51C02600EFF800CED199 /* Roboto-Medium.ttf */,
+				9BA75FA2260204A30013B48E /* CarmenSans-Regular.otf */,
+				9BA75F9E260204A30013B48E /* CarmenSans-SemiBold.otf */,
+				9BA75F9F260204A30013B48E /* CarmenSans-Thin.otf */,
+				9BA75FA0260204A30013B48E /* CocoGothic-Bold.ttf */,
+				9BA75FA1260204A30013B48E /* CocoGothic.ttf */,
 				9B6D51C62600EFF800CED199 /* Roboto-MediumItalic.ttf */,
 				9B6D51BC2600EFF700CED199 /* Roboto-Regular.ttf */,
 				9B6D51C22600EFF800CED199 /* Roboto-Thin.ttf */,
@@ -434,9 +449,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B6D51CF2600EFF800CED199 /* RobotoCondensed-LightItalic.ttf in Resources */,
+				9BA75FA5260204A30013B48E /* CocoGothic-Bold.ttf in Resources */,
 				9B6D51D82600EFF800CED199 /* Roboto-MediumItalic.ttf in Resources */,
 				9B6D51DB2600EFF800CED199 /* RobotoCondensed-BoldItalic.ttf in Resources */,
+				9BA75FA6260204A30013B48E /* CocoGothic.ttf in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				9BA75FA7260204A30013B48E /* CarmenSans-Regular.otf in Resources */,
 				9B6D51D52600EFF800CED199 /* Roboto-Bold.ttf in Resources */,
 				9B6D51D72600EFF800CED199 /* RobotoCondensed-Italic.ttf in Resources */,
 				9B6D51D32600EFF800CED199 /* Roboto-LightItalic.ttf in Resources */,
@@ -450,7 +468,9 @@
 				9B6D51DA2600EFF800CED199 /* RobotoCondensed-Bold.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				9B6D51DC2600EFF800CED199 /* Roboto-ThinItalic.ttf in Resources */,
+				9BA75FA4260204A30013B48E /* CarmenSans-Thin.otf in Resources */,
 				9B6D51D12600EFF800CED199 /* Roboto-BlackItalic.ttf in Resources */,
+				9BA75FA3260204A30013B48E /* CarmenSans-SemiBold.otf in Resources */,
 				9B6D51DD2600EFF800CED199 /* RobotoCondensed-Regular.ttf in Resources */,
 				9B6D51D22600EFF800CED199 /* Roboto-Medium.ttf in Resources */,
 			);
