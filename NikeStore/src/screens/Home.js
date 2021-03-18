@@ -13,6 +13,7 @@ import {
 } from 'react-native';
 import {Svg, Polygon} from 'react-native-svg';
 import {BlurView} from '@react-native-community/blur';
+import {StatusBar} from 'expo-status-bar';
 
 import {images, COLORS, FONTS, SIZES} from '../constants';
 
@@ -448,6 +449,7 @@ const Home = ({navigation}) => {
                     </BlurView>
                 </Modal>
             )}
+            <StatusBar style="auto" />
         </View>
     );
 };

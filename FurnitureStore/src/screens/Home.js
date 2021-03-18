@@ -10,6 +10,7 @@ import {
     TouchableOpacity,
     FlatList,
 } from 'react-native';
+import {StatusBar} from 'expo-status-bar';
 
 import {images, icons, COLORS, FONTS, SIZES} from '../constants/index';
 
@@ -400,6 +401,7 @@ const Home = ({navigation}) => {
             <View style={{height: '19%', justifyContent: 'flex-end'}}>
                 {renderPromotionCard()}
             </View>
+            <StatusBar style="auto" />
         </SafeAreaView>
     );
 };

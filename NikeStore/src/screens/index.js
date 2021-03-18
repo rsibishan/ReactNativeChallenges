@@ -2,6 +2,7 @@ import React from 'react';
 import {StyleSheet, Image, TouchableOpacity} from 'react-native';
 import {createStackNavigator} from '@react-navigation/stack';
 import {NavigationContainer, DefaultTheme} from '@react-navigation/native';
+import {StatusBar} from 'expo-status-bar';
 
 // screens
 import Home from './Home';
@@ -57,6 +58,7 @@ const Nike = () => {
                     }}
                 />
             </Stack.Navigator>
+            <StatusBar style="auto" />
         </NavigationContainer>
     );
 };

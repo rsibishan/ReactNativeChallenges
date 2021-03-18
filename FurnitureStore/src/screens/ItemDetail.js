@@ -1,3 +1,5 @@
+/* eslint-disable react/self-closing-comp */
+/* eslint-disable react-native/no-inline-styles */
 import React from 'react';
 import {
     StyleSheet,
@@ -5,12 +7,12 @@ import {
     Text,
     Image,
     ImageBackground,
-    TouchableOpacity
-} from 'react-native'
-import { COLORS, SIZES, icons, FONTS } from '../constants';
+    TouchableOpacity,
+} from 'react-native';
+import {COLORS, SIZES, icons, FONTS} from '../constants';
+import {StatusBar} from 'expo-status-bar';
 
-const ItemDetail = ({ route, navigation }) => {
-
+const ItemDetail = ({route, navigation}) => {
     // Render
 
     function renderHeader() {
@@ -19,55 +21,51 @@ const ItemDetail = ({ route, navigation }) => {
                 style={{
                     marginTop: SIZES.padding * 2,
                     marginHorizontal: SIZES.padding,
-                }}
-            >
-                <View style={{ flexDirection: 'row' }}>
-                    <View style={{ flex: 1, alignItems: 'flex-start' }}>
+                }}>
+                <View style={{flexDirection: 'row'}}>
+                    <View style={{flex: 1, alignItems: 'flex-start'}}>
                         <TouchableOpacity
-                            onPress={() => console.log('Menu on clicked')}
-                        >
+                            onPress={() => console.log('Menu on clicked')}>
                             <Image
                                 source={icons.menu}
                                 resizeMode="contain"
                                 style={{
                                     tintColor: COLORS.white,
                                     width: 25,
-                                    height: 25
+                                    height: 25,
                                 }}
                             />
                         </TouchableOpacity>
                     </View>
 
-                    <View style={{ flex: 1, alignItems: 'flex-end' }}>
+                    <View style={{flex: 1, alignItems: 'flex-end'}}>
                         <TouchableOpacity
-                            onPress={() => console.log('Search on clicked')}
-                        >
+                            onPress={() => console.log('Search on clicked')}>
                             <Image
                                 source={icons.search}
                                 resizeMode="contain"
                                 style={{
                                     tintColor: COLORS.white,
                                     width: 25,
-                                    height: 25
+                                    height: 25,
                                 }}
                             />
                         </TouchableOpacity>
                     </View>
                 </View>
             </View>
-        )
+        );
     }
 
     function renderInfo() {
-        let { itemInfo } = route.params;
+        let {itemInfo} = route.params;
 
         if (itemInfo) {
             return (
                 <ImageBackground
                     source={itemInfo.image}
                     resizeMode="cover"
-                    style={{ width: '100%', height: '100%' }}
-                >
+                    style={{width: '100%', height: '100%'}}>
                     {renderHeader()}
 
                     {/* Product Tag */}
@@ -81,18 +79,15 @@ const ItemDetail = ({ route, navigation }) => {
                             height: 40,
                             width: 40,
                             alignItems: 'center',
-                            justifyContent: 'center'
-                        }}
-                    >
+                            justifyContent: 'center',
+                        }}>
                         <View
                             style={{
                                 borderRadius: 20,
                                 backgroundColor: COLORS.blue,
                                 height: 10,
-                                width: 10
-                            }}
-                        >
-                        </View>
+                                width: 10,
+                            }}></View>
                     </View>
 
                     <View
@@ -104,17 +99,22 @@ const ItemDetail = ({ route, navigation }) => {
                             padding: SIZES.radius * 1.5,
                             backgroundColor: COLORS.transparentLightGray1,
                             width: '50%',
-                            borderRadius: 10
-                        }}
-                    >
-                        <View style={{ flex: 2 }}>
-                            <Text style={{ color: COLORS.darkGray, ...FONTS.h3 }}>
+                            borderRadius: 10,
+                        }}>
+                        <View style={{flex: 2}}>
+                            <Text style={{color: COLORS.darkGray, ...FONTS.h3}}>
                                 {itemInfo.productName}
                             </Text>
                         </View>
 
-                        <View style={{ flex: 1.5, alignItems: 'flex-end', justifyContent: 'flex-end' }}>
-                            <Text style={{ color: COLORS.darkGreen, ...FONTS.h3 }}>
+                        <View
+                            style={{
+                                flex: 1.5,
+                                alignItems: 'flex-end',
+                                justifyContent: 'flex-end',
+                            }}>
+                            <Text
+                                style={{color: COLORS.darkGreen, ...FONTS.h3}}>
                                 $ {itemInfo.price.toFixed(2)}
                             </Text>
                         </View>
@@ -123,20 +123,28 @@ const ItemDetail = ({ route, navigation }) => {
                     <View
                         style={{
                             position: 'absolute',
-                            bottom: "20%",
+                            bottom: '20%',
                             left: SIZES.padding,
-                            right: SIZES.padding
-                        }}
-                    >
-                        <Text style={{ color: COLORS.lightGray2, ...FONTS.body2 }}>Furniture</Text>
-                        <Text style={{ marginTop: SIZES.radius, color: COLORS.white, ...FONTS.h1 }}>{itemInfo.productName}</Text>
+                            right: SIZES.padding,
+                        }}>
+                        <Text
+                            style={{color: COLORS.lightGray2, ...FONTS.body2}}>
+                            Furniture
+                        </Text>
+                        <Text
+                            style={{
+                                marginTop: SIZES.radius,
+                                color: COLORS.white,
+                                ...FONTS.h1,
+                            }}>
+                            {itemInfo.productName}
+                        </Text>
                     </View>
                 </ImageBackground>
-            )
+            );
         } else {
-            <View></View>
+            <View></View>;
         }
-
     }
 
     function renderFooter() {
@@ -150,13 +158,15 @@ const ItemDetail = ({ route, navigation }) => {
                     flexDirection: 'row',
                     height: 70,
                     backgroundColor: COLORS.white,
-                    borderRadius: 35
-                }}
-            >
-                <View style={{ flex: 2, alignItems: 'center', justifyContent: 'center' }}>
-                    <TouchableOpacity
-                        onPress={() => navigation.goBack()}
-                    >
+                    borderRadius: 35,
+                }}>
+                <View
+                    style={{
+                        flex: 2,
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                    }}>
+                    <TouchableOpacity onPress={() => navigation.goBack()}>
                         <Image
                             source={icons.dashboard}
                             style={{
@@ -168,7 +178,12 @@ const ItemDetail = ({ route, navigation }) => {
                     </TouchableOpacity>
                 </View>
 
-                <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+                <View
+                    style={{
+                        flex: 1,
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                    }}>
                     <TouchableOpacity
                         style={{
                             alignItems: 'center',
@@ -176,45 +191,49 @@ const ItemDetail = ({ route, navigation }) => {
                             height: 50,
                             width: 50,
                             borderRadius: 10,
-                            backgroundColor: COLORS.primary
+                            backgroundColor: COLORS.primary,
                         }}
-                        onPress={() => console.log("Add on clicked")}
-                    >
+                        onPress={() => console.log('Add on clicked')}>
                         <Image
                             source={icons.plus}
                             style={{
                                 tintColor: COLORS.white,
                                 height: 20,
-                                width: 20
+                                width: 20,
                             }}
                         />
                     </TouchableOpacity>
                 </View>
 
-                <View style={{ flex: 2, alignItems: 'center', justifyContent: 'center' }}>
+                <View
+                    style={{
+                        flex: 2,
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                    }}>
                     <TouchableOpacity
-                        onPress={() => console.log("Profile on clicked")}
-                    >
+                        onPress={() => console.log('Profile on clicked')}>
                         <Image
                             source={icons.user}
                             style={{
                                 tintColor: COLORS.gray,
                                 width: 25,
-                                height: 25
+                                height: 25,
                             }}
                         />
                     </TouchableOpacity>
                 </View>
+                <StatusBar style="auto" />
             </View>
-        )
+        );
     }
 
     return (
-        <View style={{ flex: 1, backgroundColor: COLORS.white }}>
+        <View style={{flex: 1, backgroundColor: COLORS.white}}>
             {renderInfo()}
             {renderFooter()}
         </View>
-    )
-}
+    );
+};
 
 export default ItemDetail;

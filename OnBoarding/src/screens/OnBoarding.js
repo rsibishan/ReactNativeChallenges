@@ -10,6 +10,7 @@ import {
     TouchableOpacity,
 } from 'react-native';
 import IconAntDesign from 'react-native-vector-icons/AntDesign';
+import {StatusBar} from 'expo-status-bar';
 
 // constants
 import {theme} from '../constants/index';
@@ -162,6 +163,7 @@ const OnBoarding = () => {
         <SafeAreaView style={styles.container}>
             <View>{renderContent()}</View>
             <View style={styles.dotsRootContainer}>{renderDots()}</View>
+            <StatusBar style="auto" />
         </SafeAreaView>
     );
 };
