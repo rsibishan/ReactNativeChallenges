@@ -34,7 +34,7 @@ const BookStore = () => {
                     options={{headerShown: false}}
                 />
             </Stack.Navigator>
-            <StatusBar style="auto" />
+            <StatusBar style="light" />
         </NavigationContainer>
     );
 };
